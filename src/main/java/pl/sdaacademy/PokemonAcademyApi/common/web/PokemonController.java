@@ -49,7 +49,7 @@ public class PokemonController {
 
     @PostMapping("/signup")
     @CrossOrigin
-    public PokemonApiUserDto addUser(PokemonApiUser pokemonApiUser) {
+    public PokemonApiUserDto addUser(@RequestBody PokemonApiUser pokemonApiUser) {
         return pokemonUserApiService.addUser(pokemonApiUser);
     }
 }
